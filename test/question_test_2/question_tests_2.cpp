@@ -10,3 +10,10 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+
+TEST_CASE("Verify swap values by reference and by value functions")
+{
+	REQUIRE(swap_values_reference(10, 20) == 20, 10);
+	REQUIRE(swap_values_value(10, 20) == 20, 10);
+}
